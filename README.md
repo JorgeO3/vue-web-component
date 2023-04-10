@@ -1,4 +1,4 @@
-# simple-sample
+# Vue web component
 Este proyecto es una plantilla de Vue.js para crear web components con Vite.
 
 ## Instalación
@@ -9,7 +9,7 @@ npm install
 ```
 
 ## Configuración
-La parte más crucial de este proyecto es la configuración del archivo vite.config.ts. Aquí está la configuración utilizada para este proyecto:
+La parte más crucial de este proyecto es la configuración del archivo __vite.config.ts__. Aquí está la configuración utilizada para este proyecto:
 
 ```ts
 import { defineConfig } from 'vite'
@@ -35,7 +35,7 @@ export default defineConfig({
   }
 })
 ```
-Además, para que el proyecto funcione correctamente, es necesario crear un archivo de nombre main.ce.ts con el siguiente contenido:
+Además, para que el proyecto funcione correctamente, es necesario crear un archivo de nombre __main.ce.ts__ con el siguiente contenido:
 
 ```ts
 import { defineCustomElement } from 'vue'
@@ -46,7 +46,7 @@ const SimpleSample = defineCustomElement(SimpleSampleComponent)
 customElements.define('simple-sample', SimpleSample)
 ```
 
-También es necesario crear un componente Vue con una extensión muy específica, que es .ce.vue. El componente Vue utiliza una sintaxis SFC con el script setup. Aquí está el contenido del archivo SimpleSample.ce.vue:
+También es necesario crear un componente Vue con una extensión muy específica, que es __.ce.vue__. El componente Vue utiliza una sintaxis SFC con el script setup. Aquí está el contenido del archivo SimpleSample.ce.vue:
 
 ```vue
 <template>
